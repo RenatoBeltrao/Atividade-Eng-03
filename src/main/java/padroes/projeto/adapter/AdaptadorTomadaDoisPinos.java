@@ -9,6 +9,6 @@ public class AdaptadorTomadaDoisPinos implements Tomada {
 
     @Override
     public void ligarNaTomada() {
-
+        tomadaDoisPinos.ligarNaTomadaDoisPinos();
     }
 }
