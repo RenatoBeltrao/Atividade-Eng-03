@@ -5,12 +5,12 @@ public class Main {
         // Escolha da fábrica de acordo com o sistema operacional
         FactoryUI factoryUI;
 
-       // String sistemaOperacional = "Windows"; // Pode ser "macOS"
-       // if (sistemaOperacional.equals("Windows")) {
-            factoryUI = new FactoryUIWindows();
-       // } else {
-            // deve haver a opcao do mac os aqui
-       // }
+       String sistemaOperacional = "Mac"; // Pode ser "macOS"
+       if (sistemaOperacional.equals("Windows")) {
+           factoryUI = new FactoryUIWindows();
+       } else {
+           factoryUI = new FactoryUIMac();
+        }
 
         // Criar botão e caixa de diálogo usando a fábrica selecionada
         Botao botao = factoryUI.criarBotao();
