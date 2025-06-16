@@ -13,11 +13,11 @@ public class Main {
         // Configure a estratégia de cálculo de custo de envio como "envio padrao"
         calculadora.setStrategy(new EnvioPadrao());
         double custoEnvioPadrao = calculadora.calcularCustoEnvio(5.0);
-        System.out.println("Custo de envio expresso: $" + custoEnvioPadrao);
+        System.out.println("Custo de envio padrão: $" + custoEnvioPadrao);
 
         // Configure a estratégia de cálculo de custo de envio como "envio economico"
         calculadora.setStrategy(new EnvioEconomico());
         double custoEnvioEconomico = calculadora.calcularCustoEnvio(5.0);
-        System.out.println("Custo de envio expresso: $" + custoEnvioEconomico);
+        System.out.println("Custo de envio econômico: $" + custoEnvioEconomico);
     }
 }
